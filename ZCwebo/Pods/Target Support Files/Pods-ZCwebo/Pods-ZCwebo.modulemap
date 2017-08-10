@@ -1,0 +1,6 @@
+framework module Pods_ZCwebo {
+  umbrella header "Pods-ZCwebo-umbrella.h"
+
+  export *
+  module * { export * }
+}
