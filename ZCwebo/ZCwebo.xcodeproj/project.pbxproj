@@ -548,6 +548,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = zc.ZCwebo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
@@ -563,6 +564,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = zc.ZCwebo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};
@@ -639,6 +641,7 @@
 				F62A53281F3BEE7500FE6E92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F62A53291F3BEE7500FE6E92 /* Build configuration list for PBXNativeTarget "ZCweboTests" */ = {
 			isa = XCConfigurationList;
@@ -647,6 +650,7 @@
 				F62A532B1F3BEE7500FE6E92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F62A532C1F3BEE7500FE6E92 /* Build configuration list for PBXNativeTarget "ZCweboUITests" */ = {
 			isa = XCConfigurationList;
@@ -655,6 +659,7 @@
 				F62A532E1F3BEE7500FE6E92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
