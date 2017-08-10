@@ -10,9 +10,15 @@ import UIKit
 import SVProgressHUD
 class ZCNavController: UINavigationController {
 
+
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+     
         navigationBar.isHidden = true
         // Do any additional setup after loading the view.
     }
@@ -38,11 +44,35 @@ class ZCNavController: UINavigationController {
     
     
     
+    private func setupComposeButton(){
+    
+    
+    
+    
+    
+    
+    
+    }
+    
+    
     /// POP 返回到上一级控制器
      @objc private func popToParent() {
         popViewController(animated: true)
     }
     
+    
+    
+    
+    
+    private func setChilds(){
+    
+    
+    
+    
+        
+        
+    
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

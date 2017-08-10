@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow()
         window?.backgroundColor = UIColor.white
         
-        window?.rootViewController = ZCMainController()
+        window?.rootViewController = ZCNavController()
         window?.makeKeyAndVisible()
         
         

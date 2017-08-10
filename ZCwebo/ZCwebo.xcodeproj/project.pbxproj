@@ -13,7 +13,6 @@
 		F62A530C1F3BEE7500FE6E92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F62A530A1F3BEE7500FE6E92 /* LaunchScreen.storyboard */; };
 		F62A53171F3BEE7500FE6E92 /* ZCweboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62A53161F3BEE7500FE6E92 /* ZCweboTests.swift */; };
 		F62A53221F3BEE7500FE6E92 /* ZCweboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62A53211F3BEE7500FE6E92 /* ZCweboUITests.swift */; };
-		F62A53371F3BF37100FE6E92 /* ZCMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62A53361F3BF37100FE6E92 /* ZCMainController.swift */; };
 		F62A53391F3BF51400FE6E92 /* ZCNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62A53381F3BF51400FE6E92 /* ZCNavController.swift */; };
 		F62A533B1F3BF5A400FE6E92 /* ZCBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62A533A1F3BF5A400FE6E92 /* ZCBaseViewController.swift */; };
 /* End PBXBuildFile section */
@@ -396,7 +395,6 @@
 				F62A533B1F3BF5A400FE6E92 /* ZCBaseViewController.swift in Sources */,
 				F62A53391F3BF51400FE6E92 /* ZCNavController.swift in Sources */,
 				F62A53021F3BEE7500FE6E92 /* AppDelegate.swift in Sources */,
-				F62A53371F3BF37100FE6E92 /* ZCMainController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
