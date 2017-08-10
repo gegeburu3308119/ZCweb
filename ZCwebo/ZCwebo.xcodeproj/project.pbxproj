@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F62A53021F3BEE7500FE6E92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62A53011F3BEE7500FE6E92 /* AppDelegate.swift */; };
-		F62A53041F3BEE7500FE6E92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62A53031F3BEE7500FE6E92 /* ViewController.swift */; };
-		F62A53071F3BEE7500FE6E92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F62A53051F3BEE7500FE6E92 /* Main.storyboard */; };
 		F62A53091F3BEE7500FE6E92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62A53081F3BEE7500FE6E92 /* Assets.xcassets */; };
 		F62A530C1F3BEE7500FE6E92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F62A530A1F3BEE7500FE6E92 /* LaunchScreen.storyboard */; };
 		F62A53171F3BEE7500FE6E92 /* ZCweboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62A53161F3BEE7500FE6E92 /* ZCweboTests.swift */; };
@@ -36,8 +34,6 @@
 /* Begin PBXFileReference section */
 		F62A52FE1F3BEE7500FE6E92 /* ZCwebo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZCwebo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62A53011F3BEE7500FE6E92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F62A53031F3BEE7500FE6E92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F62A53061F3BEE7500FE6E92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F62A53081F3BEE7500FE6E92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F62A530B1F3BEE7500FE6E92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F62A530D1F3BEE7500FE6E92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,9 +93,8 @@
 		F62A53001F3BEE7500FE6E92 /* ZCwebo */ = {
 			isa = PBXGroup;
 			children = (
+				F62A532F1F3BF24500FE6E92 /* Classes */,
 				F62A53011F3BEE7500FE6E92 /* AppDelegate.swift */,
-				F62A53031F3BEE7500FE6E92 /* ViewController.swift */,
-				F62A53051F3BEE7500FE6E92 /* Main.storyboard */,
 				F62A53081F3BEE7500FE6E92 /* Assets.xcassets */,
 				F62A530A1F3BEE7500FE6E92 /* LaunchScreen.storyboard */,
 				F62A530D1F3BEE7500FE6E92 /* Info.plist */,
@@ -123,6 +118,61 @@
 				F62A53231F3BEE7500FE6E92 /* Info.plist */,
 			);
 			path = ZCweboUITests;
+			sourceTree = "<group>";
+		};
+		F62A532F1F3BF24500FE6E92 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F62A53301F3BF24500FE6E92 /* Model */,
+				F62A53311F3BF24500FE6E92 /* Tools */,
+				F62A53321F3BF24500FE6E92 /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F62A53301F3BF24500FE6E92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F62A53311F3BF24500FE6E92 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F62A53321F3BF24500FE6E92 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F62A53331F3BF24500FE6E92 /* Main */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F62A53331F3BF24500FE6E92 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F62A53341F3BF24500FE6E92 /* 主控制器 */,
+				F62A53351F3BF24500FE6E92 /* 新特性 */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F62A53341F3BF24500FE6E92 /* 主控制器 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "主控制器";
+			sourceTree = "<group>";
+		};
+		F62A53351F3BF24500FE6E92 /* 新特性 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "新特性";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +237,7 @@
 		F62A52F61F3BEE7500FE6E92 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZC;
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "张葱";
@@ -234,7 +285,6 @@
 			files = (
 				F62A530C1F3BEE7500FE6E92 /* LaunchScreen.storyboard in Resources */,
 				F62A53091F3BEE7500FE6E92 /* Assets.xcassets in Resources */,
-				F62A53071F3BEE7500FE6E92 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +309,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F62A53041F3BEE7500FE6E92 /* ViewController.swift in Sources */,
 				F62A53021F3BEE7500FE6E92 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,14 +345,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F62A53051F3BEE7500FE6E92 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F62A53061F3BEE7500FE6E92 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F62A530A1F3BEE7500FE6E92 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
