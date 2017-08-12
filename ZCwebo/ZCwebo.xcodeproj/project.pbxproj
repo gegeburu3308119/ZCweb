@@ -48,6 +48,8 @@
 		F6AE0E9A1F3D56960007D0F6 /* ZCMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AE0E991F3D56960007D0F6 /* ZCMainController.swift */; };
 		F6AE0E9C1F3D622A0007D0F6 /* ZCNsBundle+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AE0E9B1F3D622A0007D0F6 /* ZCNsBundle+extension.swift */; };
 		F6AE0E9E1F3D784E0007D0F6 /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = F6AE0E9D1F3D784E0007D0F6 /* main.json */; };
+		F6AE0EA01F3D92E80007D0F6 /* ZCweiboCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AE0E9F1F3D92E80007D0F6 /* ZCweiboCommon.swift */; };
+		F6AE0EA31F3D985D0007D0F6 /* ZCNeTWorkSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AE0EA21F3D985D0007D0F6 /* ZCNeTWorkSessionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +133,8 @@
 		F6AE0E991F3D56960007D0F6 /* ZCMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCMainController.swift; sourceTree = "<group>"; };
 		F6AE0E9B1F3D622A0007D0F6 /* ZCNsBundle+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZCNsBundle+extension.swift"; sourceTree = "<group>"; };
 		F6AE0E9D1F3D784E0007D0F6 /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
+		F6AE0E9F1F3D92E80007D0F6 /* ZCweiboCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCweiboCommon.swift; sourceTree = "<group>"; };
+		F6AE0EA21F3D985D0007D0F6 /* ZCNeTWorkSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCNeTWorkSessionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +239,7 @@
 				F62A53311F3BF24500FE6E92 /* Tools */,
 				F62A53321F3BF24500FE6E92 /* View */,
 				F6AE0E691F3D3D720007D0F6 /* bridge.h */,
+				F6AE0E9F1F3D92E80007D0F6 /* ZCweiboCommon.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 		F62A53311F3BF24500FE6E92 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F6AE0EA11F3D966D0007D0F6 /* NET */,
 				F6AE0E6B1F3D459B0007D0F6 /* CZRefreshControl */,
 				F6AE0E7D1F3D459B0007D0F6 /* SQLite */,
 				F6AE0E3B1F3C61FB0007D0F6 /* Additions */,
@@ -394,6 +400,14 @@
 				F6AE0E951F3D52DC0007D0F6 /* ZCProfileController.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		F6AE0EA11F3D966D0007D0F6 /* NET */ = {
+			isa = PBXGroup;
+			children = (
+				F6AE0EA21F3D985D0007D0F6 /* ZCNeTWorkSessionManager.swift */,
+			);
+			path = NET;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -590,12 +604,14 @@
 				F6AE0E941F3D52CE0007D0F6 /* ZCMessageController.swift in Sources */,
 				F6AE0E5A1F3C61FB0007D0F6 /* NSString+CZPath.m in Sources */,
 				F6AE0E581F3C61FB0007D0F6 /* NSString+CZBase64.m in Sources */,
+				F6AE0EA31F3D985D0007D0F6 /* ZCNeTWorkSessionManager.swift in Sources */,
 				F6AE0E831F3D459B0007D0F6 /* CZRefreshControl.swift in Sources */,
 				F6AE0E381F3C60FC0007D0F6 /* UIBarButtonItem+Extensions.swift in Sources */,
 				F6AE0E841F3D459B0007D0F6 /* CZRefreshView.swift in Sources */,
 				F6AE0E5C1F3C61FB0007D0F6 /* UIColor+CZAddition.m in Sources */,
 				F6AE0E811F3D459B0007D0F6 /* CZMeituanRefreshView.swift in Sources */,
 				F62A53391F3BF51400FE6E92 /* ZCNavController.swift in Sources */,
+				F6AE0EA01F3D92E80007D0F6 /* ZCweiboCommon.swift in Sources */,
 				F62A53021F3BEE7500FE6E92 /* AppDelegate.swift in Sources */,
 				F6AE0E8B1F3D459B0007D0F6 /* CZSQLiteManager.swift in Sources */,
 				F6AE0E3A1F3C60FC0007D0F6 /* UIImageView+WebImage.swift in Sources */,

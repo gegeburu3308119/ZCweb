@@ -11,5 +11,5 @@ pod "YYModel"
 pod "FMDB"
 pod "SVProgressHUD"
 pod "pop"
-
+pod "MJExtension"
 end
