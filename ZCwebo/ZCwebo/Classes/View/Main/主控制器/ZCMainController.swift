@@ -24,6 +24,10 @@ class ZCMainController: UITabBarController {
         setupChildControllers()
         setupComposeButton()
     
+        
+        // 设置新特性视图
+        setupNewfeatureViews()
+        
         delegate = self
         // Do any additional setup after loading the view.
     }
@@ -45,6 +49,24 @@ class ZCMainController: UITabBarController {
     */
 
 }
+//新特性
+extension ZCMainController {
+    fileprivate func setupNewfeatureViews(){
+    
+    let v = WBNewFeatureView.newFeatureView()
+        
+     view.addSubview(v)
+    
+
+    
+    }
+
+
+
+
+}
+
+
 
 extension  ZCMainController : UITabBarControllerDelegate {
 
@@ -186,7 +208,35 @@ extension ZCMainController {
     
     
     func composeStatus(){
-    
+        // FIXME: 0> 判断是否登录
+        
+        // 1> 实例化视图
+        let v = WBComposeTypeView.composeTypeView()
+        
+        // 2> 显示视图 - 注意闭包的循环引用！
+        v.show { [weak v] (clsName) in
+            
+            
+            // 展现撰写微博控制器
+            guard let clsName = clsName,
+                let cls = NSClassFromString(Bundle.main.namespace + "." + clsName) as? UIViewController.Type
+                else {
+                    v?.removeFromSuperview()
+                    return
+            }
+            
+            let vc = cls.init()
+            let nav = UINavigationController(rootViewController: vc)
+            
+            // 让导航控制器强行更新约束 - 会直接更新所有子视图的约束！
+            // 提示：开发中如果发现不希望的布局约束和动画混在一起，应该向前寻找，强制更新约束！
+            nav.view.layoutIfNeeded()
+            
+            self.present(nav, animated: true) {
+                v?.removeFromSuperview()
+            }
+        }
+
     
     
     }
